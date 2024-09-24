@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+    .sakthi{
+            height: 100vh;
+            background: url('BG.webp'),no-repeat center center;
+            background-size: cover;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .sakthi h1{
+            color:rgb(184, 114, 23);
+            font-size: 4rem;
+
+        }
+        .sakthi{
+            background: url('BG.webp');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color:azure ;
+        }
+        .sakthi h1{
+            font-size: 3rem;
+        }
+        .sakthi p{
+            font-size: 1.5rem;
+            font-family: sans-serif;
+        }
+        @media(max-width:640px){
+            .sakthi h1{
+                font-size: 2.5rem;
+                font-style: italic;
+                font-family:'sans-serif';
+            }
+            .sakthi p{
+                font-size: 1.25rem;
+                
+            }
+            .navbar-brand{
+                font-size: 2.25rem;
+            }
+            .btn-lg{
+                padding: 0.75rem 1.5rem;
+                font-size: 1.25rem;
+               }
+        }
+        @media(max-width:768px){
+
+        }
+        .navbar-dark .navbar-brand {
+    color: #0c0c0c;
+    font-family: sans-serif;
+    font-style:unset;
+}
+.card-img-top{
+        height: 140px;
+        object-fit:cover;
+        
+    }
+    .card-body{
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+h1{
+    color: #f19609;
+    font-family: sans-serif;
+    font-style:italic;
+}
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container-fluid" >
+            <a class="navbar-brand" href="#">WEBSITE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#services" >service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#office">office</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="sakthi">
+        <div class="text-center">
+            <h1> Welcome to our website</h1>
+            <p class="lead text white">
+                Different birds here
+            </p>
+            <a href="park" class="btn btn-primary btn-md">Click here</a>
+        </div>
+    </section>
+    <section class="pi3" id="services">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="S1.png" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">Profile</h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary">wishes</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="usb.jfif" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">USB-cable</h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-dark">wishes</a>
+                        </div>
+                    </div>
+                </div>
+              <div class="col-md-3">
+                    <div class="card">
+                        <img src="Mobile.jpg" class="card-img-top"  >
+                        <div class="card-body">
+                            <h5 class="card-title">Mobilephone</h5>
+                            <p class="card-text">white BIRD</p>
+                            <a href="#" class="btn btn-success">wishes</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="headphone.jfif" class="card-img-top"  >
+                        <div class="card-body">
+                            <h5 class="card-title">Headphone</h5>
+                            <p class="card-text">white BIRD</p>
+                            <a href="#" class="btn btn-success">wishes</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+       </section>
+    <h1><u>LoginForm:</u></h1>
+<section id="loginForm" class="py-5 bg-light">
+    <div class="mb-3">
+        <label for="name" class="form-label">Full Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        <div class="invalid-feedback">Please enter your name..</div> 
+</div>
+<div class="mb-3">
+    <label for="email" class="form-label">Email:</label>
+    <input title="email" class="form-control" id="email" placeholder="Enter your email" required>
+    <div class="invalid-feedback">Pleace enter a valid email.</div>
+</div>
+<div class="mb-3">
+    <label for="date" class="form-label">Prefelled Date:</label>
+    <input type="date" class="form-control" id="date" placeholder="Enter your date" required>
+    <div class="invalid-feedback">Pleace enter a valid date.</div>
+</div>
+<div class="mb-3">
+    <button type="submit" class="btn btn-primary w-100">Submit</button>
+</div>
+</section>
+<footer class="bg-info text-white text-center sa-3">
+    <p>@2024 This site .All Rights Reserved.</p>
+</footer>
+</body>
+</html>
